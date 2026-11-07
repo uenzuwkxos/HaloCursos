@@ -1,0 +1,11 @@
+# Keep line endings the platforms need and never touch binaries
+* text=auto
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.inf text eol=crlf
+*.sh text eol=lf
+Linux/**/index.theme text eol=lf
+*.cur binary
+*.ani binary
+*.png binary
+Linux/**/cursors/* binary

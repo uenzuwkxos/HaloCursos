@@ -1,0 +1,76 @@
+; Halo Cursors - Dark
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur
+AddReg    = Scheme.Reg, Scheme.Active
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+
+; adds the scheme to the list in Mouse > Pointers
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%working%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%precision%,%10%\%CUR_DIR%\%text%,%10%\%CUR_DIR%\%handwriting%,%10%\%CUR_DIR%\%unavailable%,%10%\%CUR_DIR%\%vertical%,%10%\%CUR_DIR%\%horizontal%,%10%\%CUR_DIR%\%diagonal1%,%10%\%CUR_DIR%\%diagonal2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%,%10%\%CUR_DIR%\%pin%,%10%\%CUR_DIR%\%person%"
+
+; makes it the active scheme and opens the Mouse window so you can confirm
+[Scheme.Active]
+HKCU,"Control Panel\Cursors",,0x00020000,"%SCHEME_NAME%"
+HKCU,"Control Panel\Cursors",Arrow,0x00020000,"%10%\%CUR_DIR%\%pointer%"
+HKCU,"Control Panel\Cursors",Help,0x00020000,"%10%\%CUR_DIR%\%help%"
+HKCU,"Control Panel\Cursors",AppStarting,0x00020000,"%10%\%CUR_DIR%\%working%"
+HKCU,"Control Panel\Cursors",Wait,0x00020000,"%10%\%CUR_DIR%\%busy%"
+HKCU,"Control Panel\Cursors",Crosshair,0x00020000,"%10%\%CUR_DIR%\%precision%"
+HKCU,"Control Panel\Cursors",IBeam,0x00020000,"%10%\%CUR_DIR%\%text%"
+HKCU,"Control Panel\Cursors",NWPen,0x00020000,"%10%\%CUR_DIR%\%handwriting%"
+HKCU,"Control Panel\Cursors",No,0x00020000,"%10%\%CUR_DIR%\%unavailable%"
+HKCU,"Control Panel\Cursors",SizeNS,0x00020000,"%10%\%CUR_DIR%\%vertical%"
+HKCU,"Control Panel\Cursors",SizeWE,0x00020000,"%10%\%CUR_DIR%\%horizontal%"
+HKCU,"Control Panel\Cursors",SizeNWSE,0x00020000,"%10%\%CUR_DIR%\%diagonal1%"
+HKCU,"Control Panel\Cursors",SizeNESW,0x00020000,"%10%\%CUR_DIR%\%diagonal2%"
+HKCU,"Control Panel\Cursors",SizeAll,0x00020000,"%10%\%CUR_DIR%\%move%"
+HKCU,"Control Panel\Cursors",UpArrow,0x00020000,"%10%\%CUR_DIR%\%alternate%"
+HKCU,"Control Panel\Cursors",Hand,0x00020000,"%10%\%CUR_DIR%\%link%"
+HKCU,"Control Panel\Cursors",Pin,0x00020000,"%10%\%CUR_DIR%\%pin%"
+HKCU,"Control Panel\Cursors",Person,0x00020000,"%10%\%CUR_DIR%\%person%"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Runonce\Setup\","",,"rundll32.exe shell32.dll,Control_RunDLL main.cpl @0,1"
+
+[Scheme.Cur]
+"01-pointer.cur"
+"02-help.cur"
+"03-working.ani"
+"04-busy.ani"
+"05-precision.cur"
+"06-text.cur"
+"07-handwriting.cur"
+"08-unavailable.cur"
+"09-vertical.cur"
+"10-horizontal.cur"
+"11-diagonal1.cur"
+"12-diagonal2.cur"
+"13-move.cur"
+"14-alternate.cur"
+"15-link.cur"
+"16-pin.cur"
+"17-person.cur"
+
+[Strings]
+CUR_DIR = "Cursors\Halo Dark"
+SCHEME_NAME = "Halo Dark"
+pointer = "01-pointer.cur"
+help = "02-help.cur"
+working = "03-working.ani"
+busy = "04-busy.ani"
+precision = "05-precision.cur"
+text = "06-text.cur"
+handwriting = "07-handwriting.cur"
+unavailable = "08-unavailable.cur"
+vertical = "09-vertical.cur"
+horizontal = "10-horizontal.cur"
+diagonal1 = "11-diagonal1.cur"
+diagonal2 = "12-diagonal2.cur"
+move = "13-move.cur"
+alternate = "14-alternate.cur"
+link = "15-link.cur"
+pin = "16-pin.cur"
+person = "17-person.cur"
